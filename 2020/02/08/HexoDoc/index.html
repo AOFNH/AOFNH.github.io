@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Mist","version":"7.7.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="Hexo 相关操作整理">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo Doc">
+<meta property="og:url" content="http://yoursite.com/2020/02/08/HexoDoc/index.html">
+<meta property="og:site_name" content="HnnH">
+<meta property="og:description" content="Hexo 相关操作整理">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-02-07T16:00:00.000Z">
+<meta property="article:modified_time" content="2020-02-09T13:26:31.260Z">
+<meta property="article:author" content="HnnH">
+<meta property="article:tag" content="Doc">
+<meta property="article:tag" content="hexo">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://yoursite.com/2020/02/08/HexoDoc/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true
+  };
+</script>
+
+  <title>Hexo Doc | HnnH</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">HnnH</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags<span class="badge">32</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories<span class="badge">15</span></a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives<span class="badge">17</span></a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="off"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/08/HexoDoc/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="HnnH">
+      <meta itemprop="description" content="That which does not kill us makes us stronger">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HnnH">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Hexo Doc
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-02-08 00:00:00" itemprop="dateCreated datePublished" datetime="2020-02-08T00:00:00+08:00">2020-02-08</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-02-09 21:26:31" itemprop="dateModified" datetime="2020-02-09T21:26:31+08:00">2020-02-09</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">hexo</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>Hexo 相关操作整理</p>
+<a id="more"></a>
+
+<hr>
+<h2 id="Hexo-Doc"><a href="#Hexo-Doc" class="headerlink" title="Hexo Doc"></a>Hexo Doc</h2><p><a href="https://hexo.io/zh-cn/docs" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs</a></p>
+<hr>
+<h2 id="Hexo-与-Hexo-cli-的关系"><a href="#Hexo-与-Hexo-cli-的关系" class="headerlink" title="Hexo 与 Hexo-cli 的关系"></a>Hexo 与 Hexo-cli 的关系</h2><blockquote>
+<p>官网的使用方式是，用户只安装一个 hexo-cli 即可。在执行 hexo init blog 和 npm install 的时候，hexo-cli 是会自动安装 hexo 到博客的 node_modules 目录下的。另外，hexo-cli 安装后，命令行的命令叫做 hexo，这其实只是一个别名而已</p>
+</blockquote>
+<p>ref:<br><a href="https://one-more-tech.gitlab.io/Hexo-%E4%B8%8E-Hexo-cli-%E7%9A%84%E5%85%B3%E7%B3%BB%E3%80%81%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/index/" target="_blank" rel="noopener">https://one-more-tech.gitlab.io/Hexo-%E4%B8%8E-Hexo-cli-%E7%9A%84%E5%85%B3%E7%B3%BB%E3%80%81%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/index/</a></p>
+<p>要解释 Hexo 与 Hexo-cli 的关系 和 区别，先看2个项目：<br><a href="https://github.com/hexojs/hexo" target="_blank" rel="noopener">https://github.com/hexojs/hexo</a><br><a href="https://github.com/hexojs/hexo-cli" target="_blank" rel="noopener">https://github.com/hexojs/hexo-cli</a><br>一个是 hexo，一个是 hexo-cli ，那么，hexo 与 hexo-cli 2个项目是什么关系？有什么区别？</p>
+<p>从hexo官方的 readme (<a href="https://github.com/hexojs/hexo" target="_blank" rel="noopener">https://github.com/hexojs/hexo</a> )的使用说明来看，npm install hexo-cli -g 安装的都是 hexo-cli ，没看到哪里使用了 hexo 模块。</p>
+<p>hexo-cli 命令行，npm install hexo-cli -g 安装之后，然后就可以创建 hexo 项目了：<br>hexo init blog<br>但是，生成项目之后，项目里面依赖的模块就是 hexo 模块了。<br>这样，关系就清晰了。<br>hexo cli，负责创建 hexo 工程，创建了工程之后，就hexo-cli就全身而退了。hexo-cli 把接力棒交给了 hexo。<br>hexo 模块，负责真正的项目管理工作（生成静态页面、预览等）。</p>
+<p>创建项目之后，在项目根目录下，package.json 能看到依赖：”hexo”: “^3.2.0”<br>也就是说，项目创建后，依赖的就是 hexo 了，hexo 负责全部的工作了。</p>
+<p>ref:<br><a href="https://one-more-tech.gitlab.io/Hexo-%E4%B8%8E-Hexo-cli-%E7%9A%84%E5%85%B3%E7%B3%BB%E3%80%81%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/index/" target="_blank" rel="noopener">https://one-more-tech.gitlab.io/Hexo-%E4%B8%8E-Hexo-cli-%E7%9A%84%E5%85%B3%E7%B3%BB%E3%80%81%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/index/</a></p>
+<hr>
+<h2 id="hexo-安装"><a href="#hexo-安装" class="headerlink" title="hexo 安装"></a>hexo 安装</h2><p>anaconda 安装 nodejs （附带安装 npm  （待验证））<br>npm 安装 hexo-cli  (hexo command line interface)<br>heco-cli 初始化 hexo  仓库（该仓库是由npm 进行管理的，此处存在 package.json 文件，升级hexo 就是依照该文件进行的）   </p>
+<hr>
+<h2 id="hexo-upgrade"><a href="#hexo-upgrade" class="headerlink" title="hexo upgrade"></a>hexo upgrade</h2><ul>
+<li><strong><em>更新的是 hexo 的版本 而不是 hexo-cli (hexo-command line interface)</em></strong></li>
+</ul>
+<p>To upgrade to Hexo v4, change the following line in your package.json,</p>
+<p>Go to the hexo folder<br>Modify package.json file, inside “dependencies” braces:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-    &quot;hexo&quot;: &quot;^3.9.0&quot;,</span><br><span class="line">+    &quot;hexo&quot;: &quot;^4.0.0&quot;,</span><br></pre></td></tr></table></figure>
+
+<p>UNNECESSARY to change</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&quot;hexo&quot;: &#123;</span><br><span class="line">    &quot;version&quot;: &quot;3.9.0&quot;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+
+<p>and it will be automatically updated after “npm update”.<br>Run</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm update</span><br></pre></td></tr></table></figure>
+
+<p>Done. Then check the hexo version as below.<br>Check Hexo Version<br>Go to the hexo folder and run:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"> hexo --version</span><br><span class="line">hexo: 4.0.0</span><br><span class="line">hexo-cli: 1.1.0</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://finisky.github.io/2019/11/24/updatehexo/" target="_blank" rel="noopener">https://finisky.github.io/2019/11/24/updatehexo/</a><br><a href="https://hexo.io/news/2019/10/14/hexo-4-released/" target="_blank" rel="noopener">https://hexo.io/news/2019/10/14/hexo-4-released/</a></p>
+<h1 id="NexT-theme-config"><a href="#NexT-theme-config" class="headerlink" title="NexT theme config"></a>NexT theme config</h1><h2 id="开启相关配置依赖的-CDN"><a href="#开启相关配置依赖的-CDN" class="headerlink" title="开启相关配置依赖的 CDN"></a>开启相关配置依赖的 CDN</h2><blockquote>
+<p>新版的NexT 中大量使用了cdn 来获取资源，而不是将引用的第三方文件直接放在NexT库中。当然也可手动clone使用（_config.yml 都做了规范说明）。</p>
+</blockquote>
+<p>以开启 <code>JavaScript 3D library</code> 为例 </p>
+<blockquote>
+<p>installation usage (安装方法见):<br><a href="https://github.com/theme-next/theme-next-three" target="_blank" rel="noopener">https://github.com/theme-next/theme-next-three</a></p>
+</blockquote>
+<blockquote>
+<p>这里介绍 CDN 方法</p>
+</blockquote>
+<ul>
+<li>Enable module in NexT _config.yml file:</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">three_waves: true</span><br><span class="line">OR</span><br><span class="line">canvas_lines: true</span><br><span class="line">OR</span><br><span class="line">canvas_sphere: true</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>And, if you wants to use the CDN, then need to set:</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">vendors:</span><br><span class="line">  ...</span><br><span class="line">  three: &#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;theme-next&#x2F;theme-next-three@1&#x2F;three.min.js</span><br><span class="line">  three_waves: &#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;theme-next&#x2F;theme-next-three@latest&#x2F;three-waves.min.js</span><br><span class="line">  canvas_lines: &#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;theme-next&#x2F;theme-next-three@latest&#x2F;canvas_lines.min.js</span><br><span class="line">  canvas_sphere: &#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;theme-next&#x2F;theme-next-three@latest&#x2F;canvas_sphere.min.js</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Background JS 的启用  (2 way  clone repo &amp; CDN )<br><a href="https://theme-next.org/docs/third-party-services/external-libraries" target="_blank" rel="noopener">https://theme-next.org/docs/third-party-services/external-libraries</a>  </p>
+</blockquote>
+<hr>
+<h2 id="添加站内搜索"><a href="#添加站内搜索" class="headerlink" title="添加站内搜索"></a>添加站内搜索</h2><ul>
+<li><p>installation<br>Install hexo-generator-searchdb by run following command in site root dir:  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-searchdb</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Hexo config<br>Edit site config file and add following content:  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>NexT config<br>Edit theme config file to enable Local Search  </p>
+</li>
+</ul>
+<p>其他 search service  </p>
+<p><a href="https://theme-next.org/docs/third-party-services/search-services.html" target="_blank" rel="noopener">https://theme-next.org/docs/third-party-services/search-services.html</a></p>
+<hr>
+<h2 id="给博客文章加密"><a href="#给博客文章加密" class="headerlink" title="给博客文章加密"></a>给博客文章加密</h2><p><a href="https://github.com/MikeCoder/hexo-blog-encrypt" target="_blank" rel="noopener">Hexo-blog-encrypt 插件项目</a> </p>
+<p><a href="https://xsin.gitee.io/2019/01/11/hexo-blog-encrypt/" target="_blank" rel="noopener">usage / 用法</a>  </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/Doc/" rel="tag"><i class="fa fa-tag"></i> Doc</a>
+              <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/02/08/python/" rel="prev" title="python">
+      <i class="fa fa-chevron-left"></i> python
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/02/08/Chrome%20Extension/" rel="next" title="Chrome Extension">
+      Chrome Extension <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo-Doc"><span class="nav-number">1.</span> <span class="nav-text">Hexo Doc</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo-与-Hexo-cli-的关系"><span class="nav-number">2.</span> <span class="nav-text">Hexo 与 Hexo-cli 的关系</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo-安装"><span class="nav-number">3.</span> <span class="nav-text">hexo 安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo-upgrade"><span class="nav-number">4.</span> <span class="nav-text">hexo upgrade</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#NexT-theme-config"><span class="nav-number"></span> <span class="nav-text">NexT theme config</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#开启相关配置依赖的-CDN"><span class="nav-number">1.</span> <span class="nav-text">开启相关配置依赖的 CDN</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加站内搜索"><span class="nav-number">2.</span> <span class="nav-text">添加站内搜索</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#给博客文章加密"><span class="nav-number">3.</span> <span class="nav-text">给博客文章加密</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="HnnH"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">HnnH</p>
+  <div class="site-description" itemprop="description">That which does not kill us makes us stronger</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">17</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">15</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">32</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="mailto:bellamy_n_h_chief@163.com" title="E-Mail → mailto:bellamy_n_h_chief@163.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title">
+      <i class="fa fa-fw fa-link"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://aofnh.github.io/" title="https:&#x2F;&#x2F;aofnh.github.io&#x2F;" rel="noopener" target="_blank">MyBlog</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">HnnH</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.2.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v7.7.1
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  
+  <script color='0,0,255' opacity='0.5' zIndex='-1' count='149' src="//cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1/canvas-nest.min.js"></script>
+  <script size="200" alpha="0.6" zIndex="-1" src="//cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-ribbon@1/canvas-ribbon.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/velocity-animate@1/velocity.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/velocity-animate@1/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+<script src="/js/bookmark.js"></script>
+
+
+  <script defer src="//cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three.min.js"></script>
+    <script defer src="//cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three-waves.min.js"></script>
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
