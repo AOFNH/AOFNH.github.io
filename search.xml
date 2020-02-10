@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Chrome Extension</title>
+    <url>/2020/02/08/Chrome%20Extension/</url>
+    <content><![CDATA[<p>Chrome Extension 开发笔记</p>
+<a id="more"></a>
+
+<hr>
+<h1 id="Chrome-Extension"><a href="#Chrome-Extension" class="headerlink" title="Chrome Extension"></a>Chrome Extension</h1><h2 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h2><p><a href="https://www.freecodecamp.org/news/how-to-create-a-chrome-extension-part-1-ad2a3a77541/" target="_blank" rel="noopener">https://www.freecodecamp.org/news/how-to-create-a-chrome-extension-part-1-ad2a3a77541/</a>  </p>
+<p><code>Chrome插件（chrome Extensions）开发攻略  （含 插件结构）</code><br><a href="http://chromecj.com/dev/2018-07/1482.html" target="_blank" rel="noopener">http://chromecj.com/dev/2018-07/1482.html</a>  </p>
+]]></content>
+      <categories>
+        <category>chrome extension</category>
+      </categories>
+      <tags>
+        <tag>chrome extension</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Anaconda Doc</title>
     <url>/2020/02/08/AnacondaDoc/</url>
     <content><![CDATA[<p>Anaconda 相关操作整理</p>
@@ -20,23 +37,6 @@
       <tags>
         <tag>anaconda</tag>
         <tag>Doc</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Chrome Extension</title>
-    <url>/2020/02/08/Chrome%20Extension/</url>
-    <content><![CDATA[<p>Chrome Extension 开发笔记</p>
-<a id="more"></a>
-
-<hr>
-<h1 id="Chrome-Extension"><a href="#Chrome-Extension" class="headerlink" title="Chrome Extension"></a>Chrome Extension</h1><h2 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h2><p><a href="https://www.freecodecamp.org/news/how-to-create-a-chrome-extension-part-1-ad2a3a77541/" target="_blank" rel="noopener">https://www.freecodecamp.org/news/how-to-create-a-chrome-extension-part-1-ad2a3a77541/</a>  </p>
-<p><code>Chrome插件（chrome Extensions）开发攻略  （含 插件结构）</code><br><a href="http://chromecj.com/dev/2018-07/1482.html" target="_blank" rel="noopener">http://chromecj.com/dev/2018-07/1482.html</a>  </p>
-]]></content>
-      <categories>
-        <category>chrome extension</category>
-      </categories>
-      <tags>
-        <tag>chrome extension</tag>
       </tags>
   </entry>
   <entry>
@@ -2160,8 +2160,8 @@ insert table: RoleInfo </code></pre><p>RoleInfo 表中存储了从ztree中选到
       </tags>
   </entry>
   <entry>
-    <title>C# 项目开发 总结</title>
-    <url>/2019/10/02/QS%E5%89%AF%E6%9C%AC/</url>
+    <title>C项目开发 总结</title>
+    <url>/2019/10/03/QS%E5%89%AF%E6%9C%AC/</url>
     <content><![CDATA[<p>C# 项目开发、开发模式、三层架构、js、jQuery、bootstrap、开源js插件（DataTable、select2）…<br>IIS 部署（包括：计算机网络相关知识、端口映射、端口转发、内网穿透…）<br>较为完整的项目开发 知识、问题 、总结<br>（重点：关于权限分配设计）</p>
 <a id="more"></a>
 
