@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Chrome Extension</title>
+    <url>/2020/02/08/Chrome%20Extension/</url>
+    <content><![CDATA[<p>Chrome Extension 开发笔记</p>
+<a id="more"></a>
+
+<hr>
+<h1 id="Chrome-Extension"><a href="#Chrome-Extension" class="headerlink" title="Chrome Extension"></a>Chrome Extension</h1><h2 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h2><p><a href="https://www.freecodecamp.org/news/how-to-create-a-chrome-extension-part-1-ad2a3a77541/" target="_blank" rel="noopener">https://www.freecodecamp.org/news/how-to-create-a-chrome-extension-part-1-ad2a3a77541/</a>  </p>
+<p><code>Chrome插件（chrome Extensions）开发攻略  （含 插件结构）</code><br><a href="http://chromecj.com/dev/2018-07/1482.html" target="_blank" rel="noopener">http://chromecj.com/dev/2018-07/1482.html</a>  </p>
+]]></content>
+      <categories>
+        <category>chrome extension</category>
+      </categories>
+      <tags>
+        <tag>chrome extension</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Anaconda Doc</title>
     <url>/2020/02/08/AnacondaDoc/</url>
     <content><![CDATA[<p>Anaconda 相关操作整理</p>
@@ -214,23 +231,6 @@
       </categories>
       <tags>
         <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Chrome Extension</title>
-    <url>/2020/02/08/Chrome%20Extension/</url>
-    <content><![CDATA[<p>Chrome Extension 开发笔记</p>
-<a id="more"></a>
-
-<hr>
-<h1 id="Chrome-Extension"><a href="#Chrome-Extension" class="headerlink" title="Chrome Extension"></a>Chrome Extension</h1><h2 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h2><p><a href="https://www.freecodecamp.org/news/how-to-create-a-chrome-extension-part-1-ad2a3a77541/" target="_blank" rel="noopener">https://www.freecodecamp.org/news/how-to-create-a-chrome-extension-part-1-ad2a3a77541/</a>  </p>
-<p><code>Chrome插件（chrome Extensions）开发攻略  （含 插件结构）</code><br><a href="http://chromecj.com/dev/2018-07/1482.html" target="_blank" rel="noopener">http://chromecj.com/dev/2018-07/1482.html</a>  </p>
-]]></content>
-      <categories>
-        <category>chrome extension</category>
-      </categories>
-      <tags>
-        <tag>chrome extension</tag>
       </tags>
   </entry>
   <entry>
@@ -1358,119 +1358,6 @@ myClass.newMethod();
       </tags>
   </entry>
   <entry>
-    <title>pieces of knowledge</title>
-    <url>/2019/10/05/Pieces/</url>
-    <content><![CDATA[<p>pieces of knowledge</p>
-<a id="more"></a>
-<hr>
-<h1 id="pieces-of-knowledge"><a href="#pieces-of-knowledge" class="headerlink" title="pieces of knowledge"></a><strong><em>pieces of knowledge</em></strong></h1><h2 id="64-位软件和-32-位有什么具体区别？"><a href="#64-位软件和-32-位有什么具体区别？" class="headerlink" title="64 位软件和 32 位有什么具体区别？"></a>64 位软件和 32 位有什么具体区别？</h2><p>1.32bCPU和64bCPU的区别？  </p>
-<p>2.编译器与程序位数？  </p>
-<p>3.操作系统位数和软件位数的关系  </p>
-<p>4.问题<br>1）64位的系统上是否能运行32b的应用程序？<br>2）32b的系统上是否能运行64位的应用程序？</p>
-<p><a href="https://blog.csdn.net/csdn_chai/article/details/77966056" target="_blank" rel="noopener">https://blog.csdn.net/csdn_chai/article/details/77966056</a></p>
-<hr>
-]]></content>
-      <categories>
-        <category>杂类</category>
-      </categories>
-      <tags>
-        <tag>计算机知识</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>npm Doc</title>
-    <url>/2019/10/05/npm/</url>
-    <content><![CDATA[<p>1、npm install 本地安装 与  全局安装  的区别</p>
-<p>2、查看自己全局安装过的包</p>
-<a id="more"></a>
-
-<hr>
-<h1 id="npm"><a href="#npm" class="headerlink" title="npm"></a><strong><em>npm</em></strong></h1><h2 id="npm-install-本地安装-与-全局安装-的区别"><a href="#npm-install-本地安装-与-全局安装-的区别" class="headerlink" title="npm install 本地安装 与  全局安装  的区别"></a>npm install 本地安装 与  全局安装  的区别</h2><p>npm install grunt # 本地安装<br>npm install -g grunt-cli # 全局安装</p>
-<p>本地安装</p>
-<ol>
-<li>将安装包放在 ./node_modules 下（运行npm时所在的目录</li>
-<li>可以通过 require() 来引入本地安装的包</li>
-</ol>
-<p>全局安装</p>
-<ol>
-<li>将安装包放在 /usr/local 下</li>
-<li>可以直接在命令行里使用</li>
-</ol>
-<p>细节与例子：<br><a href="https://www.cnblogs.com/chyingp/p/npm-install-difference-between-local-global.html" target="_blank" rel="noopener">https://www.cnblogs.com/chyingp/p/npm-install-difference-between-local-global.html</a></p>
-<hr>
-<h2 id="查看自己全局安装过的包"><a href="#查看自己全局安装过的包" class="headerlink" title="查看自己全局安装过的包"></a>查看自己全局安装过的包</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line">npm <span class="built_in">list</span> -g --depth <span class="number">0</span></span><br></pre></td></tr></table></figure>
-
-<p>-g:全局的安装包<br>list：已安装的node包<br>–depth 0：可能是深度0  </p>
-]]></content>
-      <categories>
-        <category>npm</category>
-      </categories>
-      <tags>
-        <tag>Doc</tag>
-        <tag>npm</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>跨终端部署blog  使用git实现</title>
-    <url>/2019/10/05/%E8%B7%A8%E7%BB%88%E7%AB%AF%E9%83%A8%E7%BD%B2blog/</url>
-    <content><![CDATA[<p>跨终端部署blog  使用git实现</p>
-<a id="more"></a>
-
-<hr>
-<h1 id="跨终端部署blog-使用git实现"><a href="#跨终端部署blog-使用git实现" class="headerlink" title="跨终端部署blog  使用git实现"></a><strong><em>跨终端部署blog  使用git实现</em></strong></h1><h2 id="思路来源："><a href="#思路来源：" class="headerlink" title="思路来源："></a>思路来源：</h2><p><a href="https://www.zhihu.com/question/21193762" target="_blank" rel="noopener">https://www.zhihu.com/question/21193762</a></p>
-<ul>
-<li>基础环境 node.js (不采取单独安装，而采用anaconda安装) <code>conda install -c conda-forge nodejs</code> <a href="https://anaconda.org/conda-forge/nodejs" target="_blank" rel="noopener">https://anaconda.org/conda-forge/nodejs</a><br> anaconda 入门姿势 <a href="https://www.jianshu.com/p/eaee1fadc1e9" target="_blank" rel="noopener">https://www.jianshu.com/p/eaee1fadc1e9</a></li>
-<li>hexo</li>
-<li>git</li>
-</ul>
-<p>hexo + github page  = hexo-blog<br>入门姿势：<a href="https://zhuanlan.zhihu.com/p/35668237" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/35668237</a></p>
-<blockquote>
-<p>基本思路：<br>将blog　整个文件git 到 github 的 私库中，这样就是对blog的 <code>完整</code> 备份（具体细节见下方）；<br>hexo 生成的静态页面存储git 在另一公库中。</p>
-</blockquote>
-<hr>
-<h2 id="关于-npm-安装包问题"><a href="#关于-npm-安装包问题" class="headerlink" title="关于 npm 安装包问题"></a>关于 npm 安装包问题</h2><p>没有 <code>-g</code> npm 命令是本地安装，即在当前路径下将包安装在node_modules 文件里，而非全局路径下</p>
-<p>以下有两个本地安装命令就是将包安装在了当前hexo创建的blog文件的 node_modules 文件</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">npm i hexo-cli -g  <span class="comment">//这个命令就是全局的</span></span><br><span class="line">npm install</span><br><span class="line">npm i hexo-deployer-git</span><br></pre></td></tr></table></figure>
-
-<p>在blog 目录的路径下 通过<code>npm list --depth 0</code> 可查看本地安装的包</p>
-<hr>
-<h2 id="Git-工具-子模块（仓库里还有子仓库）"><a href="#Git-工具-子模块（仓库里还有子仓库）" class="headerlink" title="Git 工具 - 子模块（仓库里还有子仓库）"></a>Git 工具 - 子模块（仓库里还有子仓库）</h2><h3 id="我这里偷懒直接压缩-为-zip"><a href="#我这里偷懒直接压缩-为-zip" class="headerlink" title="我这里偷懒直接压缩 为 .zip"></a>我这里偷懒直接压缩 为 .zip</h3><h3 id="Git-官方说明"><a href="#Git-官方说明" class="headerlink" title="Git 官方说明"></a>Git 官方说明</h3><p><a href="https://git-scm.com/book/zh/v1/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97" target="_blank" rel="noopener">https://git-scm.com/book/zh/v1/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97</a></p>
-<h3 id="相关解释："><a href="#相关解释：" class="headerlink" title="相关解释："></a>相关解释：</h3><p>我是clone了一个文件夹下来，然后想把这个文件夹添加上去，使用了git add .，但是一直报Changes not staged for commit的错误，并且那个文件夹后面有(modified content)，解决如下：<br>因为是clone下来的文件，所以有.git文件，将.git文件删除就ok啦</p>
-<p><a href="https://segmentfault.com/q/1010000004428943?_ea=613759" target="_blank" rel="noopener">https://segmentfault.com/q/1010000004428943?_ea=613759</a></p>
-<hr>
-<h2 id="最终实现的方法"><a href="#最终实现的方法" class="headerlink" title="最终实现的方法"></a>最终实现的方法</h2><ul>
-<li><p>push 时：  </p>
-<p>进入git 仓库 进行 git bash here</p>
-<p>将整个 blog 文件（就是根目录 - 就一个文件）使用 git 放到 GitHub 新建的私库中，好处时源码不会公开，只公开生成的静态文件</p>
-<p>其中，要修改的是：</p>
-</li>
-</ul>
-<p><del>在 hexo 主目录（即由hexo-cli 初始化的目录中）<br>    .gitignore    -改-&gt;    .gitignore-changed    （这是为了在git blog 文件时该文件能过被提交）</del></p>
-<p>  压缩所有以下文件（以同名形式，原因大概是涉及到子模式，所以只要是存在子模式的文件都进行同名压缩）<br>  .deploy_git<br>  themes</p>
-<ul>
-<li>pull/clone 后：  </li>
-</ul>
-<p><del>.gitignore-changed  -改-&gt; .gitignore  （这是为了 <code>hexo d</code> 部署blog静态文件到github repo 时进行文件的忽略）</del></p>
-<p>解压所有.zip文件（到同名文件夹，这是为了 <code>hexo g</code> 生成操作能过正常进行）<br>暂有：<br>.deploy_git<br>themes  </p>
-<ul>
-<li>pull/clone 后，编辑内容：</li>
-</ul>
-<p>进入 blog文件目录（用 hexo 生成的）  </p>
-<p>执行 hexo 相关操作  </p>
-<p>常用操作：</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line"></span><br><span class="line">hexo g</span><br><span class="line"></span><br><span class="line">hexo s --debug  <span class="comment">//开启调试模式</span></span><br><span class="line"></span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>blog</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>git</tag>
-        <tag>blog</tag>
-        <tag>跨终端</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Git  Guide</title>
     <url>/2019/10/05/Git-Guide/</url>
     <content><![CDATA[<p>Git  Guide</p>
@@ -1653,6 +1540,223 @@ myClass.newMethod();
       <tags>
         <tag>git</tag>
         <tag>.gitignore</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>pieces of knowledge</title>
+    <url>/2019/10/05/Pieces/</url>
+    <content><![CDATA[<p>pieces of knowledge</p>
+<a id="more"></a>
+<hr>
+<h1 id="pieces-of-knowledge"><a href="#pieces-of-knowledge" class="headerlink" title="pieces of knowledge"></a><strong><em>pieces of knowledge</em></strong></h1><h2 id="64-位软件和-32-位有什么具体区别？"><a href="#64-位软件和-32-位有什么具体区别？" class="headerlink" title="64 位软件和 32 位有什么具体区别？"></a>64 位软件和 32 位有什么具体区别？</h2><p>1.32bCPU和64bCPU的区别？  </p>
+<p>2.编译器与程序位数？  </p>
+<p>3.操作系统位数和软件位数的关系  </p>
+<p>4.问题<br>1）64位的系统上是否能运行32b的应用程序？<br>2）32b的系统上是否能运行64位的应用程序？</p>
+<p><a href="https://blog.csdn.net/csdn_chai/article/details/77966056" target="_blank" rel="noopener">https://blog.csdn.net/csdn_chai/article/details/77966056</a></p>
+<hr>
+]]></content>
+      <categories>
+        <category>杂类</category>
+      </categories>
+      <tags>
+        <tag>计算机知识</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>npm Doc</title>
+    <url>/2019/10/05/npm/</url>
+    <content><![CDATA[<p>1、npm install 本地安装 与  全局安装  的区别</p>
+<p>2、查看自己全局安装过的包</p>
+<a id="more"></a>
+
+<hr>
+<h1 id="npm"><a href="#npm" class="headerlink" title="npm"></a><strong><em>npm</em></strong></h1><h2 id="npm-install-本地安装-与-全局安装-的区别"><a href="#npm-install-本地安装-与-全局安装-的区别" class="headerlink" title="npm install 本地安装 与  全局安装  的区别"></a>npm install 本地安装 与  全局安装  的区别</h2><p>npm install grunt # 本地安装<br>npm install -g grunt-cli # 全局安装</p>
+<p>本地安装</p>
+<ol>
+<li>将安装包放在 ./node_modules 下（运行npm时所在的目录</li>
+<li>可以通过 require() 来引入本地安装的包</li>
+</ol>
+<p>全局安装</p>
+<ol>
+<li>将安装包放在 /usr/local 下</li>
+<li>可以直接在命令行里使用</li>
+</ol>
+<p>细节与例子：<br><a href="https://www.cnblogs.com/chyingp/p/npm-install-difference-between-local-global.html" target="_blank" rel="noopener">https://www.cnblogs.com/chyingp/p/npm-install-difference-between-local-global.html</a></p>
+<hr>
+<h2 id="查看自己全局安装过的包"><a href="#查看自己全局安装过的包" class="headerlink" title="查看自己全局安装过的包"></a>查看自己全局安装过的包</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line">npm <span class="built_in">list</span> -g --depth <span class="number">0</span></span><br></pre></td></tr></table></figure>
+
+<p>-g:全局的安装包<br>list：已安装的node包<br>–depth 0：可能是深度0  </p>
+]]></content>
+      <categories>
+        <category>npm</category>
+      </categories>
+      <tags>
+        <tag>Doc</tag>
+        <tag>npm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>跨终端部署blog  使用git实现</title>
+    <url>/2019/10/05/%E8%B7%A8%E7%BB%88%E7%AB%AF%E9%83%A8%E7%BD%B2blog/</url>
+    <content><![CDATA[<p>跨终端部署blog  使用git实现</p>
+<a id="more"></a>
+
+<hr>
+<h1 id="跨终端部署blog-使用git实现"><a href="#跨终端部署blog-使用git实现" class="headerlink" title="跨终端部署blog  使用git实现"></a><strong><em>跨终端部署blog  使用git实现</em></strong></h1><h2 id="思路来源："><a href="#思路来源：" class="headerlink" title="思路来源："></a>思路来源：</h2><p><a href="https://www.zhihu.com/question/21193762" target="_blank" rel="noopener">https://www.zhihu.com/question/21193762</a></p>
+<ul>
+<li>基础环境 node.js (不采取单独安装，而采用anaconda安装) <code>conda install -c conda-forge nodejs</code> <a href="https://anaconda.org/conda-forge/nodejs" target="_blank" rel="noopener">https://anaconda.org/conda-forge/nodejs</a><br> anaconda 入门姿势 <a href="https://www.jianshu.com/p/eaee1fadc1e9" target="_blank" rel="noopener">https://www.jianshu.com/p/eaee1fadc1e9</a></li>
+<li>hexo</li>
+<li>git</li>
+</ul>
+<p>hexo + github page  = hexo-blog<br>入门姿势：<a href="https://zhuanlan.zhihu.com/p/35668237" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/35668237</a></p>
+<blockquote>
+<p>基本思路：<br>将blog　整个文件git 到 github 的 私库中，这样就是对blog的 <code>完整</code> 备份（具体细节见下方）；<br>hexo 生成的静态页面存储git 在另一公库中。</p>
+</blockquote>
+<hr>
+<h2 id="关于-npm-安装包问题"><a href="#关于-npm-安装包问题" class="headerlink" title="关于 npm 安装包问题"></a>关于 npm 安装包问题</h2><p>没有 <code>-g</code> npm 命令是本地安装，即在当前路径下将包安装在node_modules 文件里，而非全局路径下</p>
+<p>以下有两个本地安装命令就是将包安装在了当前hexo创建的blog文件的 node_modules 文件</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">npm i hexo-cli -g  <span class="comment">//这个命令就是全局的</span></span><br><span class="line">npm install</span><br><span class="line">npm i hexo-deployer-git</span><br></pre></td></tr></table></figure>
+
+<p>在blog 目录的路径下 通过<code>npm list --depth 0</code> 可查看本地安装的包</p>
+<hr>
+<h2 id="Git-工具-子模块（仓库里还有子仓库）"><a href="#Git-工具-子模块（仓库里还有子仓库）" class="headerlink" title="Git 工具 - 子模块（仓库里还有子仓库）"></a>Git 工具 - 子模块（仓库里还有子仓库）</h2><h3 id="我这里偷懒直接压缩-为-zip"><a href="#我这里偷懒直接压缩-为-zip" class="headerlink" title="我这里偷懒直接压缩 为 .zip"></a>我这里偷懒直接压缩 为 .zip</h3><h3 id="Git-官方说明"><a href="#Git-官方说明" class="headerlink" title="Git 官方说明"></a>Git 官方说明</h3><p><a href="https://git-scm.com/book/zh/v1/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97" target="_blank" rel="noopener">https://git-scm.com/book/zh/v1/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97</a></p>
+<h3 id="相关解释："><a href="#相关解释：" class="headerlink" title="相关解释："></a>相关解释：</h3><p>我是clone了一个文件夹下来，然后想把这个文件夹添加上去，使用了git add .，但是一直报Changes not staged for commit的错误，并且那个文件夹后面有(modified content)，解决如下：<br>因为是clone下来的文件，所以有.git文件，将.git文件删除就ok啦</p>
+<p><a href="https://segmentfault.com/q/1010000004428943?_ea=613759" target="_blank" rel="noopener">https://segmentfault.com/q/1010000004428943?_ea=613759</a></p>
+<hr>
+<h2 id="最终实现的方法"><a href="#最终实现的方法" class="headerlink" title="最终实现的方法"></a>最终实现的方法</h2><ul>
+<li><p>push 时：  </p>
+<p>进入git 仓库 进行 git bash here</p>
+<p>将整个 blog 文件（就是根目录 - 就一个文件）使用 git 放到 GitHub 新建的私库中，好处时源码不会公开，只公开生成的静态文件</p>
+<p>其中，要修改的是：</p>
+</li>
+</ul>
+<p><del>在 hexo 主目录（即由hexo-cli 初始化的目录中）<br>    .gitignore    -改-&gt;    .gitignore-changed    （这是为了在git blog 文件时该文件能过被提交）</del></p>
+<p>  压缩所有以下文件（以同名形式，原因大概是涉及到子模式，所以只要是存在子模式的文件都进行同名压缩）<br>  .deploy_git<br>  themes</p>
+<ul>
+<li>pull/clone 后：  </li>
+</ul>
+<p><del>.gitignore-changed  -改-&gt; .gitignore  （这是为了 <code>hexo d</code> 部署blog静态文件到github repo 时进行文件的忽略）</del></p>
+<p>解压所有.zip文件（到同名文件夹，这是为了 <code>hexo g</code> 生成操作能过正常进行）<br>暂有：<br>.deploy_git<br>themes  </p>
+<ul>
+<li>pull/clone 后，编辑内容：</li>
+</ul>
+<p>进入 blog文件目录（用 hexo 生成的）  </p>
+<p>执行 hexo 相关操作  </p>
+<p>常用操作：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line"></span><br><span class="line">hexo g</span><br><span class="line"></span><br><span class="line">hexo s --debug  <span class="comment">//开启调试模式</span></span><br><span class="line"></span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>blog</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+        <tag>hexo</tag>
+        <tag>blog</tag>
+        <tag>跨终端</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>C# 项目开发 总结</title>
+    <url>/2019/09/01/QS%E5%89%AF%E6%9C%AC/</url>
+    <content><![CDATA[<p>C# 项目开发、开发模式、三层架构、js、jQuery、bootstrap、开源js插件（DataTable、select2）…<br>IIS 部署（包括：计算机网络相关知识、端口映射、端口转发、内网穿透…）<br>较为完整的项目开发 知识、问题 、总结<br>（重点：关于权限分配设计）</p>
+<a id="more"></a>
+
+<hr>
+<h1 id="Dream-it-Build-it-Live-it"><a href="#Dream-it-Build-it-Live-it" class="headerlink" title="Dream it. Build it. Live it."></a><strong><em><code>Dream it. Build it. Live it.</code></em></strong></h1><hr>
+<p>三层架构分为：表现层（UI）、业务逻辑层（BLL）、数据访问层（DAL）再加上实体类库（Model）</p>
+<hr>
+<p>UI</p>
+<p>*所有的属性都会用吗</p>
+<p>*modalForm  用来绑定事件传递form值（以JSON，并以Ajax提交）</p>
+<p>*submitBTN绑定事件控制form内容</p>
+<p>*通过modalForm获取（.vlaid()）到的值通过 .ajaxSubmit  – &gt; date</p>
+<p>*url: ‘/EthnicReligiousInfo/addData’<br>是传值路径？ （传入contrller 里的addDate（参数））</p>
+<p>*date的数据存储的类型是 集合 ？建议您使用 OFFSET 和 FETCH 子句而不是 TOP子句实现查询分页解决方案，并限制发送到客户端应用程序的行数。建议您使用 OFFSET 和 FETCH 子句而不是 TOP子句实现查询分页解决方案，并限制发送到客户端应用程序的行数。建议您使用 OFFSET 和 FETCH 子句而不是 TOP子句实现查询分页解决方案，并限制发送到客户端应用程序的行数。</p>
+<p>**<br>$(“#submitForm”).children(“i”).attr(“class”, “ace-icon fa fa-check”); </p>
+<pre><code>$(&quot;#submitForm&quot;).attr(&quot;disabled&quot;, false);
+$(&quot;#my-modal&quot;).modal(&apos;hide&apos;);</code></pre><p>以上的 .children .attr 、 .modal  作用。</p>
+<hr>
+<p>controller<br>**<br>public ActionResult Index()</p>
+<pre><code>{
+    return View();
+
+}</code></pre><p>类（方法）<br>都是需要用的方法<br>创建缘由<br>return View(); 什么意思</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public JsonResult getData(string name, string code, string start, string end, int sEcho, int iDisplayStart, int iDisplayLength, int iSortCol_0 &#x3D; 0, string sSortDir_0 &#x3D; &quot;desc&quot;)</span><br><span class="line"></span><br><span class="line">        &#123;</span><br><span class="line">            int count &#x3D; 0;</span><br><span class="line">            var data &#x3D; bll.GetData(name, code, start,end, new string[] &#123; &quot;id&quot;, &quot;name&quot;, &quot;code&quot;, &quot;area&quot;, &quot;establishmentDate&quot;, &quot;policy&quot;, &quot;buildProgress&quot;, &quot;userSituation&quot;, &quot;remark&quot; &#125;, iSortCol_0, sSortDir_0, iDisplayStart, iDisplayLength, ref count);</span><br><span class="line">            return Json(new sAjaxSource &#123; sEcho &#x3D; sEcho, iTotalRecords &#x3D; count, iTotalDisplayRecords &#x3D; count, aaData &#x3D; data &#125;, JsonRequestBehavior.AllowGet);</span><br><span class="line"></span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+
+<p>语法</p>
+<hr>
+<p>BLL<br>EthnicReligiousInfoDAL dal = new EthnicReligiousInfoDAL(); </p>
+<pre><code>public AjaxSubmitResult addData(EthnicReligiousInfo mData)
+{
+    try
+    {
+        dal.addData(mData);
+        return new AjaxSubmitResult() { Res = true, Msg = &quot;操作成功！&quot; };
+    }
+    catch (Exception ex)
+    {
+        return new AjaxSubmitResult() { Res = false, Msg = &quot;系统错误，请联系系统管理员！&quot; };
+    }
+
+}</code></pre><p>return new AjaxSubmitResult() { Res = false, Msg = “系统错误，请联系系统管理员！” };<br>语法意思</p>
+<hr>
+<p>DAL</p>
+<pre><code>public void addData(EthnicReligiousInfo mData)
+{
+    SqlExecute(&quot;insert into EthnicReligiousInfo(name, code, area, policy, buildProgress, userSituation, remark, establishmentDate, created) values(@name, @code, @area, @policy, @buildProgress, @userSituation, @remark, @establishmentDate, GETDATE())&quot;, mData); 
+
+}</code></pre><p>others</p>
+<p>字段名会出现在 Model(get , set) UI(name=””) DAL(数据库操作)</p>
+<p>UI PROCESSS<br>form input  name</p>
+<pre><code>by jQuery  submit modalForm 值（date 集合 类型json）        走url: &apos;/EthnicReligiousInfo/addData&apos;,进入addDate 走controller  bll  dal </code></pre><p>数据流方向<br>controller(new bll) – &gt; bll(new dal) –&gt; dal<br>DAL –&gt; BLL –&gt; CONTROLLER</p>
+<p>function关系<br>controller 有  则bll  、 dal 必有</p>
+<p>同步、异步</p>
+<p>sql对于变量的查询首先要声明变量</p>
+<p>js引用有先后顺序<br>js引用index里用过的，子页面就不需要再次引用，在同一个标签里</p>
+<p>ace<br>wms(warehouse ms)</p>
+<p>HTML页面跳转及参数传递问题<br>Bootstrap 模态框（Modal）插件<br>jQuery 添加元素</p>
+<p>属性名里不能有空格<br>封装的样式通过chrome查看<br>等分 col-sm-12 的使用<br>查询语句一定要在DB写测<br>js引用有先后顺序<br>var</p>
+<p>模糊查询，要注意数据类型</p>
+<p>sql  的导入<br>分离，备份，生成脚本  的区别<br>数据库里导表 可以是整张，也可以自选择，包括是否包含数据。</p>
+<p>drop table tableNAME;<br>TRUNCATE TABLE “表格名”;     区别（删数据/删表）</p>
+<p>null 或是 空白字符串<br>if(filename = null || filename == “”)<br>if(filename = null || filename.equals()) </p>
+<p>HTML onclick 事件属性</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">当点击按钮时执行一段 JavaScript：</span><br><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">onclick</span>=<span class="string">"copyText()"</span>&gt;</span>Copy Text<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>7.23<br>命名空间一定要一致，否则会出现一些莫名的错误</p>
+<h2 id="TO-UNDERSTAND"><a href="#TO-UNDERSTAND" class="headerlink" title="TO UNDERSTAND"></a>TO UNDERSTAND</h2><p>HTML DOM 属性<br>JavaScript HTML DOM 元素<br>jQuery Validate<br>jQuery append</p>
+<p>jQuery function自加载执行 （function（）{code}）（）<br><a href="https://blog.csdn.net/qq_26291823/article/details/75038248" target="_blank" rel="noopener">https://blog.csdn.net/qq_26291823/article/details/75038248</a></p>
+<p>对 list<T><br>修改数值，<br>select, where, 方法<br>for ，foreach, lambda<br>：<br><a href="https://blog.csdn.net/yan_hyz/article/details/7794063" target="_blank" rel="noopener">https://blog.csdn.net/yan_hyz/article/details/7794063</a><br><a href="https://blog.csdn.net/weixin_42091613/article/details/88553131" target="_blank" rel="noopener">https://blog.csdn.net/weixin_42091613/article/details/88553131</a><br><a href="https://www.cnblogs.com/guxingy/p/11075864.html" target="_blank" rel="noopener">https://www.cnblogs.com/guxingy/p/11075864.html</a><br><a href="https://blog.csdn.net/single_cong/article/details/80560616" target="_blank" rel="noopener">https://blog.csdn.net/single_cong/article/details/80560616</a></p>
+<p>在中使用标签遍历几种list示例<br><a href="https://blog.csdn.net/qq_20565303/article/details/78428848" target="_blank" rel="noopener">https://blog.csdn.net/qq_20565303/article/details/78428848</a></p>
+<p>lambda 匿名函数 (list) </p>
+<p>@Html. DropDownList<br>select2</p>
+<p>VUE.js</p>
+<p>jquery实现input输入框输入值自动智能提示的实现<br><a href="https://blog.csdn.net/qq_20372833/article/details/78749654" target="_blank" rel="noopener">https://blog.csdn.net/qq_20372833/article/details/78749654</a></p>
+<p>html5  data-* 属性<br><a href="https://blog.csdn.net/tank_in_the_street/article/details/78160374" target="_blank" rel="noopener">https://blog.csdn.net/tank_in_the_street/article/details/78160374</a></p>
+<p>实现input输入后几秒后请求，类似百度搜索<br><a href="https://blog.csdn.net/zhyaiqq123/article/details/81366620" target="_blank" rel="noopener">https://blog.csdn.net/zhyaiqq123/article/details/81366620</a></p>
+<p>ace bootstrap后台框架-widgetBox<br><a href="https://blog.csdn.net/xiaobingtao/article/details/42976567" target="_blank" rel="noopener">https://blog.csdn.net/xiaobingtao/article/details/42976567</a></p>
+<p>Bootstrap 折叠（Collapse）插件<br><a href="https://www.cnblogs.com/zzjeny/p/5568555.html" target="_blank" rel="noopener">https://www.cnblogs.com/zzjeny/p/5568555.html</a><br><a href="https://blog.csdn.net/ixygj197875/article/details/79564457" target="_blank" rel="noopener">https://blog.csdn.net/ixygj197875/article/details/79564457</a></p>
+<p>延迟执行 setTimeout<br> //等待分析图表加载,完成后关闭（2s）<br>$(function() {setTimeout(function () { $(“#delayClick”).click(); },2000);})</p>
+<p>用户角色权限数据库设计<br><a href="https://wenku.baidu.com/view/aadac1d95022aaea998f0f6a.html" target="_blank" rel="noopener">https://wenku.baidu.com/view/aadac1d95022aaea998f0f6a.html</a></p>
+<p>Dictionary&lt;int, List<string>&gt;<br><a href="https://stackoverflow.com/questions/17108399/dictionaryint-liststring" target="_blank" rel="noopener">https://stackoverflow.com/questions/17108399/dictionaryint-liststring</a></p>
+<p>tag: c#  sql server<br>针对于多个inner join或者left join多条件查询的时候，各个inner join 的指向问题<br><a href="https://blog.csdn.net/ck457897564/article/details/52487684" target="_blank" rel="noopener">https://blog.csdn.net/ck457897564/article/details/52487684</a></p>
+<pre><code class="sql">example:
+<span class="keyword">use</span> CMS</code></pre>
+]]></content>
+      <categories>
+        <category>C#</category>
+      </categories>
+      <tags>
+        <tag>MVC</tag>
+        <tag>C#</tag>
+        <tag>三层架构</tag>
+        <tag>DataTable</tag>
+        <tag>NPOI</tag>
+        <tag>select2</tag>
+        <tag>端口映射</tag>
+        <tag>端口转发</tag>
+        <tag>内网穿透</tag>
+        <tag>IIS</tag>
       </tags>
   </entry>
   <entry>
