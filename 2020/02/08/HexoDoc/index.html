@@ -27,13 +27,15 @@
 <meta property="og:site_name" content="HnnH">
 <meta property="og:description" content="Hexo 相关操作整理NexT 相关设置">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://raw.githubusercontent.com/AOFNH/imagehosting/master/img/blog/hexo/normal/20200215141150-Hexo-FrontMatter.jpg">
 <meta property="article:published_time" content="2020-02-07T16:00:00.000Z">
-<meta property="article:modified_time" content="2020-02-13T04:18:40.782Z">
+<meta property="article:modified_time" content="2020-02-14T16:00:00.000Z">
 <meta property="article:author" content="HnnH">
-<meta property="article:tag" content="Docs">
 <meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="NexT">
+<meta property="article:tag" content="Docs">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/AOFNH/imagehosting/master/img/blog/hexo/normal/20200215141150-Hexo-FrontMatter.jpg">
 
 <link rel="canonical" href="http://yoursite.com/2020/02/08/HexoDoc/">
 
@@ -228,7 +230,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-02-13 12:18:40" itemprop="dateModified" datetime="2020-02-13T12:18:40+08:00">2020-02-13</time>
+                <time title="Modified: 2020-02-15 00:00:00" itemprop="dateModified" datetime="2020-02-15T00:00:00+08:00">2020-02-15</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -248,14 +250,14 @@
                 </span>
                   , 
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Bolg/" itemprop="url" rel="index">
-                    <span itemprop="name">Bolg</span>
+                  <a href="/categories/Docs/NexT/" itemprop="url" rel="index">
+                    <span itemprop="name">NexT</span>
                   </a>
                 </span>
                   , 
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Docs/NexT/" itemprop="url" rel="index">
-                    <span itemprop="name">NexT</span>
+                  <a href="/categories/Bolg/" itemprop="url" rel="index">
+                    <span itemprop="name">Bolg</span>
                   </a>
                 </span>
             </span>
@@ -358,8 +360,28 @@
 </ol>
 <p>Ref:<br><a href="https://xhyangdali.github.io/2019/05/10/GitHub+Hexo%E5%8D%9A%E5%AE%A2categories%E5%87%BA%E7%8E%B0404/" target="_blank" rel="noopener">https://xhyangdali.github.io/2019/05/10/GitHub+Hexo%E5%8D%9A%E5%AE%A2categories%E5%87%BA%E7%8E%B0404/</a></p>
 <hr>
+<h2 id="Hexo-title中有特殊字符报错"><a href="#Hexo-title中有特殊字符报错" class="headerlink" title="Hexo title中有特殊字符报错"></a>Hexo title中有特殊字符报错</h2><blockquote>
+<p>Why: 由于写法是yml语法，”、$这些都是特殊符号  </p>
+</blockquote>
+<blockquote>
+<p>How: 对特殊符号进行转义，用对应的HTML字符实体进行替换</p>
+</blockquote>
+<p>网上给出的错误例子 <a href="https://www.edoou.com/articles/1579064827719834" target="_blank" rel="noopener">link</a> </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">要求显示</span><br><span class="line">title: Shell中$i $() $&#123;&#125;的区别</span><br><span class="line"></span><br><span class="line">front matter title 改写</span><br><span class="line">title: Shell中\&amp;#36;i \&amp;#36;&amp;#40;&amp;#41; \&amp;#36;&amp;#123;&amp;#125;的区别</span><br><span class="line"></span><br><span class="line">实际显示</span><br><span class="line">Shell中\$i \$() \$&#123;&#125;的区别</span><br></pre></td></tr></table></figure>
+
+<p>可用写法  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">title: Shell中&amp;#36;i &amp;#36;&amp;#40;&amp;#41; &amp;#36;&amp;#123;&amp;#125;的区别</span><br></pre></td></tr></table></figure>
+
+<div class="note primary">
+            <p><strong>注意</strong>  </p><ul><li>不能直接以<code>HTML字符实体</code>开始;  </li><li>无需加 <code>\</code> 转译;  </li></ul>
+          </div>
+
+<h3 id="附录：HTML字符实体"><a href="#附录：HTML字符实体" class="headerlink" title="附录：HTML字符实体"></a>附录：HTML字符实体</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">!   <span class="symbol">&amp;#33;</span> — 惊叹号 Exclamation mark</span><br><span class="line">"   <span class="symbol">&amp;#34;</span> <span class="symbol">&amp;quot;</span> — 双引号 Quotation mark</span><br><span class="line">#   <span class="symbol">&amp;#35;</span> — 数字标志 Number sign</span><br><span class="line">$   <span class="symbol">&amp;#36;</span> — 美元标志 Dollar sign</span><br><span class="line">%   <span class="symbol">&amp;#37;</span> — 百分号 Percent sign</span><br><span class="line">&amp;   <span class="symbol">&amp;#38;</span> <span class="symbol">&amp;amp;</span> — 与符号(&amp;) Ampersand</span><br><span class="line">'   <span class="symbol">&amp;#39;</span> — 单引号 Apostrophe</span><br><span class="line">(   <span class="symbol">&amp;#40;</span> — 小括号左边部分 Left parenthesis</span><br><span class="line">)   <span class="symbol">&amp;#41;</span> — 小括号右边部分 Right parenthesis</span><br><span class="line">*   <span class="symbol">&amp;#42;</span> — 星号 Asterisk</span><br><span class="line">+   <span class="symbol">&amp;#43;</span> — 加号 Plus sign</span><br><span class="line"><span class="tag">&lt;   &amp;#<span class="attr">60</span>; &amp;<span class="attr">lt</span>; 小于号 <span class="attr">Less</span> <span class="attr">than</span></span></span><br><span class="line"><span class="tag">=   <span class="string">&amp;#61;</span> — 等于符号 <span class="attr">Equals</span> <span class="attr">sign</span></span></span><br><span class="line"><span class="tag"><span class="attr">-</span>   &amp;#<span class="attr">45</span>; &amp;<span class="attr">minus</span>; — 减号</span></span><br><span class="line"><span class="tag">&gt;</span>   <span class="symbol">&amp;#62;</span> <span class="symbol">&amp;gt;</span> — 大于号 Greater than</span><br><span class="line">?   <span class="symbol">&amp;#63;</span> — 问号 Question mark</span><br><span class="line">@   <span class="symbol">&amp;#64;</span> — Commercial at</span><br><span class="line">[   <span class="symbol">&amp;#91;</span> — 中括号左边部分 Left square bracket</span><br><span class="line">\   <span class="symbol">&amp;#92;</span> — 反斜杠 Reverse solidus (backslash)</span><br><span class="line">]   <span class="symbol">&amp;#93;</span> — 中括号右边部分 Right square bracket</span><br><span class="line">&#123;   <span class="symbol">&amp;#123;</span> — 大括号左边部分 Left curly brace</span><br><span class="line">|   <span class="symbol">&amp;#124;</span> — 竖线Vertical bar</span><br><span class="line">&#125;   <span class="symbol">&amp;#125;</span> — 大括号右边部分 Right curly brace</span><br><span class="line">空格 <span class="symbol">&amp;nbsp;</span></span><br></pre></td></tr></table></figure>
+
+<p>Ref:<br><a href="https://www.edoou.com/articles/1579064827719834" target="_blank" rel="noopener">https://www.edoou.com/articles/1579064827719834</a></p>
 <hr>
-<h1 id="NexT-theme-config"><a href="#NexT-theme-config" class="headerlink" title="NexT theme config"></a>NexT theme config</h1><h2 id="NexT-installation"><a href="#NexT-installation" class="headerlink" title="NexT installation"></a>NexT installation</h2><p>使用 git  安装、更新、checkout tag(切换版本)</p>
+<hr>
+<h1 id="NexT-theme"><a href="#NexT-theme" class="headerlink" title="NexT theme"></a>NexT theme</h1><h2 id="NexT-installation"><a href="#NexT-installation" class="headerlink" title="NexT installation"></a>NexT installation</h2><p>使用 git  安装、更新、checkout tag(切换版本)</p>
 <ul>
 <li>使用 git 安装：  </li>
 </ul>
@@ -417,17 +439,32 @@
 <p>其他 search service  </p>
 <p><a href="https://theme-next.org/docs/third-party-services/search-services.html" target="_blank" rel="noopener">https://theme-next.org/docs/third-party-services/search-services.html</a></p>
 <hr>
-<h2 id="NexT-提供的-Front-Matter"><a href="#NexT-提供的-Front-Matter" class="headerlink" title="NexT 提供的 Front Matter"></a>NexT 提供的 Front Matter</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">toc:</span><br><span class="line">  enable: true</span><br><span class="line">  number: false</span><br><span class="line">  max_depth: 3</span><br><span class="line">reward_settings:</span><br><span class="line">  enable: true</span><br><span class="line">  comment: Donate comment here.</span><br><span class="line">quicklink:</span><br><span class="line">  enable: true</span><br><span class="line">  delay: true</span><br><span class="line">  timeout: 3000</span><br><span class="line">  priority: true</span><br><span class="line">  ignores:</span><br></pre></td></tr></table></figure>
-<p><a href="https://theme-next.org/docs/theme-settings/front-matter" target="_blank" rel="noopener">https://theme-next.org/docs/theme-settings/front-matter</a></p>
-<hr>
-<h2 id="Tag-Plugins"><a href="#Tag-Plugins" class="headerlink" title="Tag Plugins"></a>Tag Plugins</h2><p>From Hexo<br><a href="https://hexo.io/docs/tag-plugins" target="_blank" rel="noopener">https://hexo.io/docs/tag-plugins</a></p>
-<p>From NexT<br><a href="https://theme-next.org/docs/tag-plugins/" target="_blank" rel="noopener">https://theme-next.org/docs/tag-plugins/</a></p>
-<ul>
-<li>Note (Bootstrap Callout)  </li>
-</ul>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note [class] [no-icon] %&#125;</span><br><span class="line">Any content (support inline tags too.io).</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">[class]   : default | primary | success | info | warning | danger.</span><br></pre></td></tr></table></figure>
+<h2 id="NexT-提供的-Front-Matter"><a href="#NexT-提供的-Front-Matter" class="headerlink" title="NexT 提供的 Front Matter"></a>NexT 提供的 Front Matter</h2><div class="note primary">
+            <div class="tabs" id="front-matter-tab"><ul class="nav-tabs"><li class="tab active"><a href="#front-matter-tab-1">NexT Front Matter</a></li><li class="tab"><a href="#front-matter-tab-2">Hexo Front Matter</a></li></ul><div class="tab-content"><div class="tab-pane active" id="front-matter-tab-1"><p>NexT Front Matter<br><a href="https://theme-next.org/docs/theme-settings/front-matter" target="_blank" rel="noopener">https://theme-next.org/docs/theme-settings/front-matter</a>  </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">toc:</span><br><span class="line">  enable: true</span><br><span class="line">  number: false</span><br><span class="line">  max_depth: 3</span><br><span class="line">reward_settings:</span><br><span class="line">  enable: true</span><br><span class="line">  comment: Donate comment here.</span><br><span class="line">quicklink:</span><br><span class="line">  enable: true</span><br><span class="line">  delay: true</span><br><span class="line">  timeout: 3000</span><br><span class="line">  priority: true</span><br><span class="line">  ignores:</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="front-matter-tab-2"><p>Hexo Front Matter<br><a href="https://hexo.io/docs/front-matter.html" target="_blank" rel="noopener">https://hexo.io/docs/front-matter.html</a>  </p><img src="https://raw.githubusercontent.com/AOFNH/imagehosting/master/img/blog/hexo/normal/20200215141150-Hexo-FrontMatter.jpg" class="" title="hexo front matter" alt="hexo front matter"></div></div></div>
+          </div>
 
+<hr>
+<h2 id="Tag-Plugins"><a href="#Tag-Plugins" class="headerlink" title="Tag Plugins"></a>Tag Plugins</h2><div class="note primary">
+            <p>对markdown写法的补充  </p>
+          </div>
+
+<div class="tabs" id="tags-tab"><ul class="nav-tabs"><li class="tab active"><a href="#tags-tab-1">From Hexo</a></li><li class="tab"><a href="#tags-tab-2">From NexT</a></li></ul><div class="tab-content"><div class="tab-pane active" id="tags-tab-1"><p>From Hexo<br><a href="https://hexo.io/docs/tag-plugins" target="_blank" rel="noopener">https://hexo.io/docs/tag-plugins</a></p>
 <ul>
+<li>Link<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% link text url [external] [title] %&#125;</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ul>
+<ul>
+<li>Image<br>Inserts an image with specified size.<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% img [class names] &#x2F;path&#x2F;to&#x2F;image [width] [height] &#39;&quot;title text&quot; &quot;alt text&quot;&#39; %&#125;</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ul></div><div class="tab-pane" id="tags-tab-2"><p>From NexT<br><a href="https://theme-next.org/docs/tag-plugins/" target="_blank" rel="noopener">https://theme-next.org/docs/tag-plugins/</a></p>
+<ul>
+<li><p>Note (Bootstrap Callout)  </p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note [class] [no-icon] %&#125;</span><br><span class="line">Any content (support inline tags too.io).</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">[class]   : default | primary | success | info | warning | danger.</span><br></pre></td></tr></table></figure>
+</li>
 <li><p>Code Block<br><code>``` [language] [title] [url] [link text] code snippet ```</code>  </p>
 <ul>
 <li>Example  </li>
@@ -436,14 +473,21 @@
 code snippet  ```</code></p>
 <figure class="highlight c"><figcaption><span>_.compact</span><a href="http://underscorejs.org/#compact" target="_blank" rel="noopener">Underscore.js</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">code snippet</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>Image<br>Inserts an image with specified size.</p>
+<li><p>Tabs<br>Tabs with icons and labels<br><a href="https://mist.theme-next.org/docs/tag-plugins/tabs" target="_blank" rel="noopener">Advanced usage</a>  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&#123;% tabs Sixth unique name %&#125;</span><br><span class="line">&lt;!-- tab Solution 1@text-width --&gt;</span><br><span class="line">**This is Tab 1.**</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- tab Solution 2 @amazon --&gt;</span><br><span class="line">**This is Tab 2.**</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- tab Solution 3@bold --&gt;</span><br><span class="line">**This is Tab 3.**</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&#123;% endtabs %&#125;</span><br></pre></td></tr></table></figure>
+<div class="tabs" id="sixth-unique-name"><ul class="nav-tabs"><li class="tab active"><a href="#sixth-unique-name-1"><i class="fa fa-text-width"></i>Solution 1</a></li><li class="tab"><a href="#sixth-unique-name-2"><i class="fa fa-amazon"></i>Solution 2</a></li><li class="tab"><a href="#sixth-unique-name-3"><i class="fa fa-bold"></i>Solution 3</a></li></ul><div class="tab-content"><div class="tab-pane active" id="sixth-unique-name-1"><p><strong>This is Tab 1.</strong></p></div><div class="tab-pane" id="sixth-unique-name-2"><p><strong>This is Tab 2.</strong></p></div><div class="tab-pane" id="sixth-unique-name-3"><p><strong>This is Tab 3.</strong></p></div></div></div>
+
+
+
 </li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% img [class names] &#x2F;path&#x2F;to&#x2F;image [width] [height] &#39;&quot;title text&quot; &quot;alt text&quot;&#39; %&#125;</span><br></pre></td></tr></table></figure>
+</ul></div></div></div>
 
 <hr>
 <h2 id="Hexo添加自定义分类菜单项并定制页面布局"><a href="#Hexo添加自定义分类菜单项并定制页面布局" class="headerlink" title="Hexo添加自定义分类菜单项并定制页面布局"></a>Hexo添加自定义分类菜单项并定制页面布局</h2><p>简单的添加分类菜单（实际就是向 categories/Tags 做了个链接）<br><a href="http://blog.amdoing.com/add-custom-menu-in-theme-next-for-hexo/" target="_blank" rel="noopener">http://blog.amdoing.com/add-custom-menu-in-theme-next-for-hexo/</a></p>
 <p>进阶，修改样式和home页一样<br><a href="https://finisky.github.io/2019/02/24/customizedcategory/" target="_blank" rel="noopener">https://finisky.github.io/2019/02/24/customizedcategory/</a></p>
+<hr>
+<hr>
+<h1 id="Trouble"><a href="#Trouble" class="headerlink" title="Trouble"></a>Trouble</h1><h2 id="The-39-35-jQuery-39-in-Hexo-amp-NexT-Blog"><a href="#The-39-35-jQuery-39-in-Hexo-amp-NexT-Blog" class="headerlink" title="The &#39;&#35; jQuery&#39; in Hexo&amp;NexT Blog"></a>The &#39;&#35; jQuery&#39; in Hexo&amp;NexT Blog</h2><p><a href="https://aofnh.github.io/2020/02/10/Hexo&NexT%20Blog%20%E4%B8%AD%E7%9A%84%E5%A5%87%E8%91%A9%E5%9D%91/#more" target="_blank" rel="noopener">写markdown 时务必不要出现’ # jQuery ‘</a>  </p>
 
     </div>
 
@@ -454,22 +498,22 @@ code snippet  ```</code></p>
   <div class="popular-posts-header">Related Posts</div>
   <ul class="popular-posts">
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="\2020\02\10\Hexo&NexT Blog 中的奇葩坑\" rel="bookmark">Hexo + NexT Blog 中的奇葩坑</a></div>
+      <div class="popular-posts-title"><a href="\2020\02\10\Hexo&NexT Blog 中的奇葩坑\" rel="bookmark">The &#39;&#35; jQuery&#39; in Hexo&NexT Blog</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\2019\02\20\hello-hexo\" rel="bookmark">Hello Hexo</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\2019\10\05\跨终端部署blog\" rel="bookmark">跨终端部署blog  使用git实现</a></div>
     </li>
     <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="\2020\02\08\AnacondaDoc\" rel="bookmark">Anaconda Docs</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="\2019\10\05\Git-Guide\" rel="bookmark">Git  Docs</a></div>
-    </li>
-    <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="\2019\10\05\npm\" rel="bookmark">npm Docs</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="\2019\02\20\hello-world\" rel="bookmark">Hello Hexo</a></div>
-    </li>
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="\2019\10\05\跨终端部署blog\" rel="bookmark">跨终端部署blog  使用git实现</a></div>
+      <div class="popular-posts-title"><a href="\2019\10\05\Git-Docs\" rel="bookmark">Git  Docs</a></div>
     </li>
   </ul>
 
@@ -477,9 +521,9 @@ code snippet  ```</code></p>
       <footer class="post-footer">
           
           <div class="post-tags">
-              <a href="/tags/Docs/" rel="tag"><i class="fa fa-tag"></i> Docs</a>
               <a href="/tags/Hexo/" rel="tag"><i class="fa fa-tag"></i> Hexo</a>
               <a href="/tags/NexT/" rel="tag"><i class="fa fa-tag"></i> NexT</a>
+              <a href="/tags/Docs/" rel="tag"><i class="fa fa-tag"></i> Docs</a>
           </div>
 
         
@@ -488,12 +532,12 @@ code snippet  ```</code></p>
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/02/08/python/" rel="prev" title="python">
-      <i class="fa fa-chevron-left"></i> python
+    <a href="/2020/02/08/AnacondaDoc/" rel="prev" title="Anaconda Docs">
+      <i class="fa fa-chevron-left"></i> Anaconda Docs
     </a></div>
       <div class="post-nav-item">
-    <a href="/2020/02/08/AnacondaDoc/" rel="next" title="Anaconda Docs">
-      Anaconda Docs <i class="fa fa-chevron-right"></i>
+    <a href="/2020/02/08/Chrome%20Extension/" rel="next" title="Chrome Extension">
+      Chrome Extension <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -554,7 +598,7 @@ code snippet  ```</code></p>
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Docs"><span class="nav-number">1.</span> <span class="nav-text">Docs</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#一定要参考官方文档"><span class="nav-number">1.1.</span> <span class="nav-text">一定要参考官方文档</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo"><span class="nav-number">2.</span> <span class="nav-text">Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo-Doc"><span class="nav-number">2.1.</span> <span class="nav-text">Hexo Doc</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo-与-Hexo-cli-的关系"><span class="nav-number">2.2.</span> <span class="nav-text">Hexo 与 Hexo-cli 的关系</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo-安装"><span class="nav-number">2.3.</span> <span class="nav-text">Hexo 安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Upgrade-Hexo"><span class="nav-number">2.4.</span> <span class="nav-text">Upgrade Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Upgarade-Hexo-（and-dependencies）-and-NexT"><span class="nav-number">2.5.</span> <span class="nav-text">Upgarade Hexo （and dependencies） and NexT</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Encrypt-articles"><span class="nav-number">2.6.</span> <span class="nav-text">Encrypt articles</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#How-to-add-tags-or-categories-for-articles-tags-and-categories-的规范"><span class="nav-number">2.7.</span> <span class="nav-text">How to add tags or categories for articles &#x2F; tags and categories 的规范</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#404-error"><span class="nav-number">2.8.</span> <span class="nav-text">404 error</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Categories-or-Tags-部分链接出现-404-page"><span class="nav-number">2.8.1.</span> <span class="nav-text">Categories or Tags 部分链接出现 404 page</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#NexT-theme-config"><span class="nav-number">3.</span> <span class="nav-text">NexT theme config</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#NexT-installation"><span class="nav-number">3.1.</span> <span class="nav-text">NexT installation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开启相关配置依赖的-CDN"><span class="nav-number">3.2.</span> <span class="nav-text">开启相关配置依赖的 CDN</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加站内搜索"><span class="nav-number">3.3.</span> <span class="nav-text">添加站内搜索</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#NexT-提供的-Front-Matter"><span class="nav-number">3.4.</span> <span class="nav-text">NexT 提供的 Front Matter</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Tag-Plugins"><span class="nav-number">3.5.</span> <span class="nav-text">Tag Plugins</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo添加自定义分类菜单项并定制页面布局"><span class="nav-number">3.6.</span> <span class="nav-text">Hexo添加自定义分类菜单项并定制页面布局</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Docs"><span class="nav-number">1.</span> <span class="nav-text">Docs</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#一定要参考官方文档"><span class="nav-number">1.1.</span> <span class="nav-text">一定要参考官方文档</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo"><span class="nav-number">2.</span> <span class="nav-text">Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo-Doc"><span class="nav-number">2.1.</span> <span class="nav-text">Hexo Doc</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo-与-Hexo-cli-的关系"><span class="nav-number">2.2.</span> <span class="nav-text">Hexo 与 Hexo-cli 的关系</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo-安装"><span class="nav-number">2.3.</span> <span class="nav-text">Hexo 安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Upgrade-Hexo"><span class="nav-number">2.4.</span> <span class="nav-text">Upgrade Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Upgarade-Hexo-（and-dependencies）-and-NexT"><span class="nav-number">2.5.</span> <span class="nav-text">Upgarade Hexo （and dependencies） and NexT</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Encrypt-articles"><span class="nav-number">2.6.</span> <span class="nav-text">Encrypt articles</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#How-to-add-tags-or-categories-for-articles-tags-and-categories-的规范"><span class="nav-number">2.7.</span> <span class="nav-text">How to add tags or categories for articles &#x2F; tags and categories 的规范</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#404-error"><span class="nav-number">2.8.</span> <span class="nav-text">404 error</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Categories-or-Tags-部分链接出现-404-page"><span class="nav-number">2.8.1.</span> <span class="nav-text">Categories or Tags 部分链接出现 404 page</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo-title中有特殊字符报错"><span class="nav-number">2.9.</span> <span class="nav-text">Hexo title中有特殊字符报错</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#附录：HTML字符实体"><span class="nav-number">2.9.1.</span> <span class="nav-text">附录：HTML字符实体</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#NexT-theme"><span class="nav-number">3.</span> <span class="nav-text">NexT theme</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#NexT-installation"><span class="nav-number">3.1.</span> <span class="nav-text">NexT installation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开启相关配置依赖的-CDN"><span class="nav-number">3.2.</span> <span class="nav-text">开启相关配置依赖的 CDN</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加站内搜索"><span class="nav-number">3.3.</span> <span class="nav-text">添加站内搜索</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#NexT-提供的-Front-Matter"><span class="nav-number">3.4.</span> <span class="nav-text">NexT 提供的 Front Matter</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Tag-Plugins"><span class="nav-number">3.5.</span> <span class="nav-text">Tag Plugins</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo添加自定义分类菜单项并定制页面布局"><span class="nav-number">3.6.</span> <span class="nav-text">Hexo添加自定义分类菜单项并定制页面布局</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Trouble"><span class="nav-number">4.</span> <span class="nav-text">Trouble</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#The-39-35-jQuery-39-in-Hexo-amp-NexT-Blog"><span class="nav-number">4.1.</span> <span class="nav-text">The &#39;&amp;#35; jQuery&#39; in Hexo&amp;NexT Blog</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
